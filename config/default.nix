@@ -18,6 +18,8 @@
   # image.nvim
   # lsp-lines?
   # lspsaga
+  # luasnip?
+  # nvim-surround
   # obsidian.nvim
   # render-markdown
   # trouble
