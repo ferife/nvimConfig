@@ -3,5 +3,6 @@
     ./languages
 
     ./lspconfig.nix
+    ./treesitter.nix
   ];
 }
