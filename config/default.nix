@@ -21,7 +21,6 @@
   # indent-blankline
   # lsp-lines?
   # lspsaga
-  # nvim-jdtls
   # numbertoggle
   # obsidian.nvim
   # render-markdown
