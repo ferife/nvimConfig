@@ -9,8 +9,6 @@
   # Plugins to possibly enable through nixvim
   # A plugin to auto sort lines of text
 
-  # blink-cmp
-  # blink-cmp-dictionary
   # blink-ripgrep
   # clipboard-image (to use in my vault)
   # codesnap (to take screenshots of my code)
@@ -27,7 +25,6 @@
   # obsidian.nvim
   # render-markdown
   # smear-cursor
-  # spider
   # todo-comments
   # trouble
   # ts-autotag - For working with HTML tags
@@ -36,6 +33,7 @@
   # undotree
   # vim-be-good # The plugin collection of games by ThePrimeagen designed to practice basic vim movements
   # which-key
+  # wilder
   # zotcite
     # Zotero integration when working on markdown files
 }
