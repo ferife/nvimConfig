@@ -18,7 +18,6 @@
   # image.nvim
   # lsp-lines?
   # lspsaga
-  # numbertoggle
   # obsidian.nvim
   # render-markdown
   # todo-comments

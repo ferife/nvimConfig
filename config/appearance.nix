@@ -24,6 +24,7 @@
       settings.scope.enabled = true;
     };
     lualine.enable = true;
+    numbertoggle.enable = true;
     web-devicons.enable = true;
   };
 }
