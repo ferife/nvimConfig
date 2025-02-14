@@ -23,4 +23,12 @@
       use_as_default_explorer = true;
     };
   };
+  keymaps = [
+    {
+      action = "<cmd>lua MiniFiles.open()<CR>";
+      key = "<leader>fs";
+      mode = "n";
+      options.desc = "Open mini.files";
+    }
+  ];
 }
