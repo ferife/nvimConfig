@@ -1,5 +1,6 @@
 {
   imports = [
+    ./lsp
     ./mini
 
     ./spider.nix
