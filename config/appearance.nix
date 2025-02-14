@@ -19,7 +19,15 @@
         cursorword.enable = false;
       };
     };
+    indent-blankline = {
+      enable = true;
+      settings.scope.enabled = true;
+    };
     lualine.enable = true;
     web-devicons.enable = true;
   };
 }
+# TODO consider the following appearance plugins
+# twilight - dims inactive portions of code being edited
+  # Has command to toggle
+# smear-cursor
