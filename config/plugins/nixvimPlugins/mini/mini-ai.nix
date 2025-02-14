@@ -1,7 +1,7 @@
 {
   plugins.mini.modules.ai = {
     # Alternative to nvim-treesitter-textobject
-    mappings = { 
+    mappings = {
       # Main textobject prefixes
       around = "a";
       inside = "i";

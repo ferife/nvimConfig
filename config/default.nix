@@ -9,6 +9,7 @@
   # Plugins to possibly enable through nixvim
   # A plugin to auto sort lines of text
 
+  # blink-cmp-dictionary
   # blink-ripgrep
   # clipboard-image (to use in my vault)
   # codesnap (to take screenshots of my code)
