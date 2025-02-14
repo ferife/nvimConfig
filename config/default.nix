@@ -32,7 +32,6 @@
     # Has command to toggle
   # undotree
   # vim-be-good # The plugin collection of games by ThePrimeagen designed to practice basic vim movements
-  # which-key
   # wilder
   # zotcite
     # Zotero integration when working on markdown files
