@@ -20,7 +20,6 @@
   # lspsaga
   # obsidian.nvim
   # render-markdown
-  # todo-comments
   # trouble
   # ts-autotag - For working with HTML tags
   # undotree
