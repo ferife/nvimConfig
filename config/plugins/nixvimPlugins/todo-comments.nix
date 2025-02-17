@@ -1,6 +1,9 @@
 {
   plugins.todo-comments = {
     enable = true;
+    settings = {
+      highlight.pattern = [".*<(KEYWORDS)s*:" ".*<(KEYWORDS)s*"];
+    };
     keymaps = {
       todoTelescope = {
         key = "<leader>td";
@@ -9,3 +12,9 @@
     };
   };
 }
+# TODO: example
+# HACK: example
+# WARN: example
+# PERF: example
+# NOTE: example
+# TEST: example
