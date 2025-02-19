@@ -18,11 +18,12 @@
       ];
 
       perSystem =
-        { system, ... }:
+        { system, pkgs, self', lib, ... }:
         let
           nixvimLib = nixvim.lib.${system};
           nixvim' = nixvim.legacyPackages.${system};
           nixvimModule = {
+            # inherit pkgs;
             inherit system; # or alternatively, set `pkgs`
             module = import ./config; # import the module directly
             # You can use `extraSpecialArgs` to pass additional arguments to your module files
@@ -36,6 +37,10 @@
           checks = {
             # Run `nix flake check .` to verify that your config is not broken
             default = nixvimLib.check.mkTestDerivationFromNixvimModule nixvimModule;
+            # default = nixvimLib.check.mkTestDerivationFromNixvimModule {
+            #   inherit nvim;
+            #   name = "nixvim configuration";
+            # };
           };
 
           packages = {
