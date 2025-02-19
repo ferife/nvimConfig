@@ -7,6 +7,8 @@
     mapleader = " ";
     maplocalleader = ",";
   };
+  viAlias = true;
+  vimAlias = true;
   opts = {
     number = true;         # Add line numbers
     relativenumber = true; # Makes line numbers relative to current line
