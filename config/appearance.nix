@@ -36,3 +36,4 @@
 # twilight - dims inactive portions of code being edited
   # Has command to toggle
 # smear-cursor
+# rainbow-delimiters - Provides alternating colors for parentheses, braces, brackets, etc.

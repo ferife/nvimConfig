@@ -1,5 +1,8 @@
 {
-  plugins.lsp = {
-    enable = true;  # Enables github:neovim/nvim-lspconfig
+  plugins = {
+    lsp = {
+      enable = true;  # Enables github:neovim/nvim-lspconfig
+    };
+    # TODO: lsp-format
   };
 }
