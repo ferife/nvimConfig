@@ -1,6 +1,7 @@
 {
   # Import all your configuration modules here
   imports = [
+    ./bash.nix
     ./java.nix
     ./lua.nix
     # ./markdown.nix
