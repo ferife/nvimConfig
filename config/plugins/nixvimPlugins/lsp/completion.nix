@@ -1,35 +1,30 @@
 {
   plugins = {
-    blink-cmp = {
+    cmp = {
       enable = true;
-      setupLspCapabilities = true;
+      autoEnableSources = true;
       settings = {
-        completion = {
-          documentation.auto_show = true;
-          ghost_text.enabled = true;
-        };
-        # sources = {
-        #   providers = {
-        #     module = "blink-ripgrep";
-        #     name = "Ripgrep";
-        #     opts = {
-        #       async = true;
-        #       fallback_to_regex_highlighting = true;
-        #       search_casing = "--ignore-case";
-        #     };
-        #   };
-        #   default = [
-        #     "lsp"
-        #     "path"
-        #     "luasnip"
-        #     "buffer"
-        #     "ripgrep"
-        #   ];
-        # };
+        sources = [
+          # TODO: Add source for english dictionary words
+          {
+            name = "buffer";
+            options.get_bufnrs.__raw = "vim.api.nvim_list_bufs";
+          }
+          { name = "calc"; }
+          { name = "latex_symbols"; }
+          { name = "luasnip"; }
+          { name = "nvim_lsp"; }
+          { name = "nvim_lsp_signature_help"; }
+          { name = "nvim_lua"; }
+          { name = "path"; }
+        ];
+        snippet.expand = ''
+          function(args)
+            require('luasnip').lsp_expand(args.body)
+          end
+        '';
       };
     };
     friendly-snippets.enable = true;
   };
-  # TODO Set up blink-cmp-dictionary
-  # TODO Set up blink-ripgrep
 }
