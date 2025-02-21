@@ -4,6 +4,7 @@
     ./mini
 
     # TODO: ./git.nix # Plugin to do with lazygit
+    ./intellitab.nix
     ./spider.nix
     ./telescope.nix
     ./todo-comments.nix
