@@ -5,7 +5,7 @@
       autoEnableSources = true;
       settings = {
         sources = [
-          # TODO: Add source for english dictionary words
+          # TODO: Add cmp-spell
           {
             name = "buffer";
             options.get_bufnrs.__raw = "vim.api.nvim_list_bufs";
