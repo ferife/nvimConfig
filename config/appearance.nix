@@ -13,7 +13,7 @@
   };
   colorschemes.tokyonight = {
     enable = true;
-    settings.style = "storm";
+    settings.style = "moon";
   };
   plugins = {
     cursorline = {
