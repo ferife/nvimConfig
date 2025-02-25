@@ -29,6 +29,7 @@
     };
     lualine.enable = true;
     numbertoggle.enable = true;
+    # rainbow-delimiters.enable = true;
     web-devicons.enable = true;
   };
 }
