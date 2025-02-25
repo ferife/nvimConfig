@@ -3,7 +3,7 @@
     ./lsp
     ./mini
 
-    # TODO: ./git.nix # Plugin to do with lazygit
+     ./git.nix
     ./intellitab.nix
     ./spider.nix
     ./telescope.nix
@@ -37,4 +37,7 @@
 
   # TODO: Set up wilder
   # Wilder is a plugin that adds completion to the menu that opens when pressing `:` or `/`
+
+  # TODO: Set up nvim-ufo
+  # Plugin for folding, which has lsp integration
 }
