@@ -8,13 +8,9 @@
     };
   };
   colorschemes.onedark = {
-    # enable = true;
-    settings.style = "cool";
-  };
-  colorschemes.tokyonight = {
     enable = true;
-    settings.style = "moon";
   };
+  # WARN: Don't try to use the Tokyo Night theme. The stylix version makes reading stuff in the terminal difficult due to poor color choices
   plugins = {
     cursorline = {
       enable = true;
