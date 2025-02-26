@@ -3,7 +3,7 @@
     ./lsp
     ./mini
 
-     ./git.nix
+    ./git.nix
     ./intellitab.nix
     ./spider.nix
     ./telescope.nix

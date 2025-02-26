@@ -29,8 +29,4 @@
     web-devicons.enable = true;
   };
 }
-# TODO consider the following appearance plugins
-# twilight - dims inactive portions of code being edited
-  # Has command to toggle
-# smear-cursor
-# rainbow-delimiters - Provides alternating colors for parentheses, braces, brackets, etc.
+# TODO: Consider smear-cursor
