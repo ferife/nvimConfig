@@ -5,6 +5,7 @@
 
     ./git.nix
     ./intellitab.nix
+    ./nvim-ufo.nix
     ./spider.nix
     ./telescope.nix
     ./todo-comments.nix
@@ -34,7 +35,4 @@
 
   # TODO: Set up wilder
   # Wilder is a plugin that adds completion to the menu that opens when pressing `:` or `/`
-
-  # TODO: Set up nvim-ufo
-  # Plugin for folding, which has lsp integration
 }
