@@ -23,9 +23,6 @@
   # TODO: Set up harpoon
   # Plugin that keeps a workspace-specific list of files that are visited frequently, making it easy to travel back to these
 
-  # TODO: Set up nvim-surround
-  # Plugin that adds motions for working with surrounding symbols, such as parentheses, quotes, html tags, etc
-
   # TODO: Set up trouble
   # Plugin by folke that shows lists with diagnostics, LSP references, Telescope search results, etc
 

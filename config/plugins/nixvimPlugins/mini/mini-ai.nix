@@ -1,6 +1,8 @@
 {
   plugins.mini.modules.ai = {
-    # Alternative to nvim-treesitter-textobject
+    # TODO: Learn the AI movements properly
+
+    # Alternative to nvim-treesitter-textobject and nvim-surround
     mappings = {
       # Main textobject prefixes
       around = "a";
