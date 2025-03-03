@@ -7,3 +7,4 @@
     ./basics.nix
   ];
 }
+# TODO: Look into how to do project-wide string substitution

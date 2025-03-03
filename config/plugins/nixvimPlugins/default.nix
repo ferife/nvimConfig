@@ -35,4 +35,6 @@
 
   # TODO: Set up wilder
   # Wilder is a plugin that adds completion to the menu that opens when pressing `:` or `/`
+
+  # TODO: Consider setting up yazi.nvim
 }
