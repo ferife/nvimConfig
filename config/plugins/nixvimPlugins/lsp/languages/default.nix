@@ -4,7 +4,7 @@
     ./bash.nix
     ./java.nix
     ./lua.nix
-    # ./markdown.nix
+    ./markdown.nix
     ./nix.nix
 
     # TODO: ./assembly.nix
@@ -25,4 +25,6 @@
 
     # TODO: ./python.nix
   ];
+
+  lsp.markdown.enable = false;
 }

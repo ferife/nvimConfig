@@ -1,3 +1,4 @@
+{ config, lib, ... }:
 {
   plugins = {
     cmp = {
@@ -5,9 +6,11 @@
       autoEnableSources = true;
       settings = {
         mapping = {
-          "<CR>"  = "cmp.mapping.confirm({ select = true })";
+          "<C-CR>"  = "cmp.mapping.confirm({ select = true })";
           "<C-n>" = "cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select })";
           "<C-p>" = "cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select })";
+          # "<C-j>" = "cmp.mapping.scroll_docs(4)";
+          # "<C-k>" = "cmp.mapping.scroll_docs(-4)";
        };
         sources = [
           {
@@ -23,10 +26,13 @@
           { name = "nvim_lsp"; }
           { name = "nvim_lsp_signature_help"; }
           { name = "nvim_lua"; }
+          # { name = "obsidian"; }
           { name = "path"; }
           { name = "plugins"; }
+          # { name = "render-markdown"; }
           { name = "rg"; }
           { name = "spell"; }
+          # { name = "zotcite"; }
         ];
         snippet.expand = ''
           function(args)
