@@ -1,8 +1,8 @@
-# { lib, pkgs }:
+{ userSettings, ... }:
 {
   plugins.nvim-jdtls = {
     enable = true;
-    configuration = "/home/fernandorf/.cache/jdtls/config";
-    data = "/home/fernandorf/.cache/jdtls/workspace";
+    configuration = "/home/${userSettings.username}/.cache/jdtls/config";
+    data = "/home/${userSettings.username}/.cache/jdtls/workspace";
   };
 }

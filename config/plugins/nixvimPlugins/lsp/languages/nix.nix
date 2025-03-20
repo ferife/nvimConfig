@@ -1,3 +1,8 @@
+{ userSettings, ... }:
+let
+  nvimFlakePath = "/home/${userSettings.username}/Documents/Configs/nvimConfig/nvimConfig-main";
+  nixFlakePath = "/home/${userSettings.username}/Documents/Configs/nixConfig/nixConfig-main";
+in
 {
   plugins.lsp.servers.nixd = {
     enable = true;
@@ -6,6 +11,8 @@
       nixpkgs.expr = "import <nixpkgs> { }";
       formatting.command = ["alejandra"];
       options.nixvim.expr = ''(builtins.getFlake "~/Documents/Configs/nvimConfig").packages.$(system).neovimNixvim.options'';
+        nixos.expr = ''(builtins.getFlake "${nixFlakePath}").nixosConfigurations.laptop.options'';
+        home_manager.expr = ''(builtins.getFlake "${nixFlakePath}").nixosConfigurations.${userSettings.username}@laptop.options'';
       # options = ''
       #   nixos = {
       #     expr = '(${builtins.getFlake "/home/fernandorf/Documents/Configs/nixConfig"}).nixosConfigurations.laptop.options',
