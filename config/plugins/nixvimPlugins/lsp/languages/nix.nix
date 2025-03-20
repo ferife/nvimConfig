@@ -8,17 +8,19 @@ in
     enable = true;
     cmd = [ "nixd" ];
     settings = {
-      nixpkgs.expr = "import <nixpkgs> { }";
+      # nixpkgs.expr = "import <nixpkgs> { }";
       formatting.command = ["alejandra"];
-      options.nixvim.expr = ''(builtins.getFlake "~/Documents/Configs/nvimConfig").packages.$(system).neovimNixvim.options'';
+      options = {
+        nixvim.expr = ''(builtins.getFlake "${nvimFlakePath}").packages.$(system).neovimNixvim.options'';
         nixos.expr = ''(builtins.getFlake "${nixFlakePath}").nixosConfigurations.laptop.options'';
         home_manager.expr = ''(builtins.getFlake "${nixFlakePath}").nixosConfigurations.${userSettings.username}@laptop.options'';
+      };
       # options = ''
       #   nixos = {
-      #     expr = '(${builtins.getFlake "/home/fernandorf/Documents/Configs/nixConfig"}).nixosConfigurations.laptop.options',
+      #     expr = '(${builtins.getFlake "${nixFlakePath}"}).nixosConfigurations.laptop.options',
       #   },
       #   home_manager = {
-      #     expr = '(${builtins.getFlake "/home/fernandorf/Documents/Configs/nixConfig"}).homeConfigurations.fernadorf@laptop.options',
+      #     expr = '(${builtins.getFlake "${nixFlakePath}"}).homeConfigurations.${userSettings.username}@laptop.options',
       #   },
       # '';
     };
