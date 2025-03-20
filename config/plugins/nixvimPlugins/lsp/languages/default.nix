@@ -16,8 +16,8 @@
     # TODO: ./css.nix
 
     # TODO: ./html.nix
-      # ts-autotag: plugin to autoclose and autorename html tags
-      # colorizer: Highlights RGB hex codes in their respective color
+    # ts-autotag: plugin to autoclose and autorename html tags
+    # colorizer: Highlights RGB hex codes in their respective color
 
     # TODO: ./javascript.nix
 

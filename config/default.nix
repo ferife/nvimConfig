@@ -1,5 +1,8 @@
-{ config, lib, ... }:
 {
+  config,
+  lib,
+  ...
+}: {
   # Import all your configuration modules here
   imports = [
     ./plugins
@@ -11,3 +14,4 @@
   config.appearance.colorscheme = "onedark";
 }
 # TODO: Look into how to do project-wide string substitution
+

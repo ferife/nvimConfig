@@ -1,5 +1,5 @@
 {
-  plugins.mini.modules.move = {  
+  plugins.mini.modules.move = {
     # Move text around with ease
     mappings = {
       # Move visual selection in visual mode

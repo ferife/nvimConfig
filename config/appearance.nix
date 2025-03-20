@@ -1,5 +1,8 @@
-{ config, lib, ... }:
 {
+  config,
+  lib,
+  ...
+}: {
   options = {
     appearance = {
       colorscheme = lib.mkOption {
@@ -53,5 +56,5 @@
   ];
 }
 # TODO: Consider smear-cursor
-
 # TODO: Set up a line length marker line at 80 characters
+

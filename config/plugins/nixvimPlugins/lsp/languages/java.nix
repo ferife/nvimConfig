@@ -1,5 +1,4 @@
-{ userSettings, ... }:
-{
+{userSettings, ...}: {
   plugins.nvim-jdtls = {
     enable = true;
     configuration = "/home/${userSettings.username}/.cache/jdtls/config";

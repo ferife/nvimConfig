@@ -1,12 +1,10 @@
-{ userSettings, ... }:
-let
+{userSettings, ...}: let
   nvimFlakePath = "/home/${userSettings.username}/Documents/Configs/nvimConfig/nvimConfig-main";
   nixFlakePath = "/home/${userSettings.username}/Documents/Configs/nixConfig/nixConfig-main";
-in
-{
+in {
   plugins.lsp.servers.nixd = {
     enable = true;
-    cmd = [ "nixd" ];
+    cmd = ["nixd"];
     settings = {
       # nixpkgs.expr = "import <nixpkgs> { }";
       formatting.command = ["alejandra"];

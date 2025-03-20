@@ -1,37 +1,40 @@
-{ config, lib, ... }:
 {
+  config,
+  lib,
+  ...
+}: {
   plugins = {
     cmp = {
       enable = true;
       autoEnableSources = true;
       settings = {
         mapping = {
-          "<C-CR>"  = "cmp.mapping.confirm({ select = true })";
+          "<C-CR>" = "cmp.mapping.confirm({ select = true })";
           "<C-n>" = "cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select })";
           "<C-p>" = "cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select })";
           # "<C-j>" = "cmp.mapping.scroll_docs(4)";
           # "<C-k>" = "cmp.mapping.scroll_docs(-4)";
-       };
+        };
         sources = [
           {
             name = "buffer";
             options.get_bufnrs.__raw = "vim.api.nvim_list_bufs";
           }
-          { name = "calc"; }
-          { name = "cmdline"; }
-          { name = "dap"; }
-          { name = "latex_symbols"; }
-          { name = "luasnip"; }
-          { name = "nerdfont"; }
-          { name = "nvim_lsp"; }
-          { name = "nvim_lsp_signature_help"; }
-          { name = "nvim_lua"; }
+          {name = "calc";}
+          {name = "cmdline";}
+          {name = "dap";}
+          {name = "latex_symbols";}
+          {name = "luasnip";}
+          {name = "nerdfont";}
+          {name = "nvim_lsp";}
+          {name = "nvim_lsp_signature_help";}
+          {name = "nvim_lua";}
           # { name = "obsidian"; }
-          { name = "path"; }
-          { name = "plugins"; }
+          {name = "path";}
+          {name = "plugins";}
           # { name = "render-markdown"; }
-          { name = "rg"; }
-          { name = "spell"; }
+          {name = "rg";}
+          {name = "spell";}
           # { name = "zotcite"; }
         ];
         snippet.expand = ''
