@@ -1,6 +1,8 @@
 {
   # Import all your configuration modules here
   imports = [
+    ./misc.nix
+
     ./bash.nix
     ./java.nix
     ./lua.nix
