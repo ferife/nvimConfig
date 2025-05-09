@@ -8,6 +8,7 @@
   };
 
   outputs = {
+    nixpkgs,
     nixvim,
     flake-parts,
     ...
@@ -37,7 +38,7 @@
         nixvimLib = nixvim.lib.${system};
         nixvim' = nixvim.legacyPackages.${system};
         nixvimModule = {
-          # inherit pkgs;
+          inherit pkgs;
           inherit system; # or alternatively, set `pkgs`
           module = import ./config; # import the module directly
           # You can use `extraSpecialArgs` to pass additional arguments to your module files

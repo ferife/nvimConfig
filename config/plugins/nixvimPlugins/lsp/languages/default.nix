@@ -8,6 +8,7 @@
     ./lua.nix
     ./markdown.nix
     ./nix.nix
+    ./yuck.nix
 
     # TODO: ./assembly.nix
 
