@@ -1,5 +1,4 @@
-{...}:
-{
+{...}: {
   plugins.csvview = {
     enable = true;
   };
