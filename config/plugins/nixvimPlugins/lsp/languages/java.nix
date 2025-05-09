@@ -1,7 +1,12 @@
 {userSettings, ...}: {
-  plugins.nvim-jdtls = {
+  plugins.jdtls = {
     enable = true;
-    configuration = "/home/${userSettings.username}/.cache/jdtls/config";
-    data = "/home/${userSettings.username}/.cache/jdtls/workspace";
+    settings.cmd = [
+      "java"
+      "-data"
+      "/home/${userSettings.username}/.cache/jdtls/workspace"
+      "-configuration"
+      "/home/${userSettings.username}/.cache/jdtls/config"
+    ];
   };
 }
