@@ -9,9 +9,9 @@
 
     ./appearance.nix
     ./basics.nix
+    ./dependencies.nix
   ];
 
   config.appearance.colorscheme = "onedark";
+  # TODO: Look into how to do project-wide string substitution
 }
-# TODO: Look into how to do project-wide string substitution
-
