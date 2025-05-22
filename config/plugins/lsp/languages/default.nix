@@ -30,5 +30,8 @@
     # TODO: ./python.nix
   ];
 
-  config.frf.plugins.lsp.languages.markdown.enable = false;
+  config.frf.plugins.lsp.languages = {
+    java = false;
+    markdown.enable = false;
+  };
 }
