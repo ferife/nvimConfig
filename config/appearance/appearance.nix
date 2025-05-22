@@ -3,18 +3,6 @@
   lib,
   ...
 }: {
-  options = {
-    appearance = {
-      colorscheme = lib.mkOption {
-        type = with lib.types; uniq str;
-        description = "Select a color scheme from the available options (everforest and onedark)";
-        default = "onedark";
-        example = "everforest";
-      };
-      rainbow-delimiters = lib.mkEnableOption "the ranbow delimiters plugin";
-    };
-  };
-
   config = lib.mkMerge [
     {
       plugins = {
@@ -34,6 +22,10 @@
         web-devicons.enable = true;
       };
     }
+
+    # TODO: Consider smear-cursor
+    # TODO: Set up a line length marker line at 80 characters
+
     (lib.mkIf config.appearance.rainbow-delimiters {
       plugins.rainbow-delimiters.enable = true;
     })
@@ -55,6 +47,3 @@
     # WARN: Don't try to use the Tokyo Night theme. The stylix version makes reading stuff in the terminal difficult due to poor color choices
   ];
 }
-# TODO: Consider smear-cursor
-# TODO: Set up a line length marker line at 80 characters
-

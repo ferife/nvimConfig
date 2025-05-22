@@ -5,10 +5,10 @@
 }: {
   # Import all your configuration modules here
   imports = [
-    ./plugins
+    ./options.nix
 
-    ./appearance
-    ./basics.nix
-    ./dependencies.nix
+    ./appearance.nix
   ];
+
+  config.appearance.colorscheme = "onedark";
 }

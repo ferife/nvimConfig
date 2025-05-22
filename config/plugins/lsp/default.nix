@@ -1,11 +1,19 @@
 {
+  config,
+  lib,
+  ...
+}: {
   imports = [
+    ./options.nix
     ./languages
 
     ./completion.nix
     ./lspconfig.nix
     ./treesitter.nix
   ];
+
+  config.frf.plugins.lsp.enable = true;
+
   # TODO: Set up lazydev?
   # Plugin for making the writing of an nvim lua config easier
   # IDK how much it would help, since I use nixvim

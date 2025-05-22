@@ -1,4 +1,8 @@
 {
+  config,
+  lib,
+  ...
+}: {
   imports = [
     ./mini-ai.nix
     ./mini-comment.nix
@@ -9,5 +13,5 @@
     ./mini-trailspace.nix
   ];
 
-  plugins.mini.enable = true;
+  plugins.mini.enable = config.frf.plugins.mini;
 }

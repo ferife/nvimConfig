@@ -1,5 +1,11 @@
 {
+  config,
+  lib,
+  ...
+}: {
   imports = [
+    ./options.nix
+
     ./lsp
     ./mini
 
@@ -12,6 +18,18 @@
     ./which-key.nix
     ./yanky.nix
   ];
+
+  config.frf.plugins = {
+    git = lib.mkDefault true;
+    intellitab = lib.mkDefault true;
+    mini = lib.mkDefault true;
+    nvim-ufo = lib.mkDefault true;
+    spider = lib.mkDefault true;
+    telescope = lib.mkDefault true;
+    todo-comments = lib.mkDefault true;
+    which-key = lib.mkDefault true;
+    yanky = lib.mkDefault true;
+  };
 
   # TODO: Find a plugin that auto sorts lines of text
 

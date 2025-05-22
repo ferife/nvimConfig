@@ -1,6 +1,7 @@
 {
   # Import all your configuration modules here
   imports = [
+    ./options.nix
     ./misc.nix
 
     ./bash.nix
@@ -29,5 +30,5 @@
     # TODO: ./python.nix
   ];
 
-  lsp.markdown.enable = false;
+  config.frf.plugins.lsp.languages.markdown.enable = false;
 }

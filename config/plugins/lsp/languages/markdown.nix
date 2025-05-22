@@ -5,14 +5,7 @@
 }: {
   # TODO: Set up nixvim for markdown and obsidian
 
-  options = {
-    lsp.markdown = {
-      enable = lib.mkEnableOption "markdown support";
-      obsidian = lib.mkEnableOption "obsidian support";
-    };
-  };
-
-  config = lib.mkIf config.lsp.markdown.enable {
+  config = lib.mkIf config.frf.plugins.lsp.languages.markdown.enable {
     plugins = {
       # lsp.servers.markdown_oxide.enable = true;
       # render-markdown = {
