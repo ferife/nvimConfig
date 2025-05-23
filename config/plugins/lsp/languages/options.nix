@@ -9,6 +9,11 @@
       default = config.frf.plugins.lsp.enable;
       description = "Whether to enable bash support";
     };
+    hyprlang = lib.mkOption {
+      type = lib.types.bool;
+      default = config.frf.plugins.lsp.enable;
+      description = "Whether to enable hyprlang support";
+    };
     java = lib.mkOption {
       type = lib.types.bool;
       default = config.frf.plugins.lsp.enable;
