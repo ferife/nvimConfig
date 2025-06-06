@@ -31,6 +31,8 @@
     yanky = lib.mkDefault true;
   };
 
+  # TODO: Install hardline.nvim (plugin that forces me to learn proper nvim navigation)
+
   # TODO: Find a plugin that auto sorts lines of text
 
   # TODO: Set up codesnap or an alternative
