@@ -9,6 +9,11 @@
       default = config.frf.plugins.lsp.enable;
       description = "Whether to enable bash support";
     };
+    c = lib.mkOption {
+      type = lib.types.bool;
+      default = config.frf.plugins.lsp.enable;
+      description = "Whether to enable C support";
+    };
     hyprlang = lib.mkOption {
       type = lib.types.bool;
       default = config.frf.plugins.lsp.enable;
@@ -18,6 +23,11 @@
       type = lib.types.bool;
       default = config.frf.plugins.lsp.enable;
       description = "Whether to enable java support";
+    };
+    javascript = lib.mkOption {
+      type = lib.types.bool;
+      default = config.frf.plugins.lsp.enable;
+      description = "Whether to enable javascript support";
     };
     lua = lib.mkOption {
       type = lib.types.bool;
