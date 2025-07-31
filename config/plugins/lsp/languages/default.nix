@@ -6,10 +6,8 @@
 
     ./bash.nix
     ./c.nix
-    # TODO: ./css.nix
-    # TODO: ./html.nix
-    #`- ts-autotag: plugin to autoclose and autorename html tags
-    # - colorizer: Highlights RGB hex codes in their respective color
+    # ./css.nix
+    # ./html.nix
     ./hyprlang.nix
     ./java.nix
     ./javascript.nix

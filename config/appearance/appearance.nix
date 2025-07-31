@@ -23,9 +23,6 @@
       };
     }
 
-    # TODO: Consider smear-cursor
-    # TODO: Set up a line length marker line at 80 characters
-
     (lib.mkIf config.appearance.rainbow-delimiters {
       plugins.rainbow-delimiters.enable = true;
     })

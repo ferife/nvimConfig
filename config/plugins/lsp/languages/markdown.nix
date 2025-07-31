@@ -3,8 +3,6 @@
   lib,
   ...
 }: {
-  # TODO: Set up nixvim for markdown and obsidian
-
   config = lib.mkIf config.frf.plugins.lsp.languages.markdown.enable {
     plugins = {
       # lsp.servers.markdown_oxide.enable = true;
