@@ -10,6 +10,7 @@
     ./mini
 
     ./git.nix
+    ./hardtime.nix
     ./intellitab.nix
     ./nvim-ufo.nix
     ./spider.nix
@@ -21,6 +22,7 @@
 
   config.frf.plugins = {
     git = lib.mkDefault true;
+    hardtime = lib.mkDefault true;
     intellitab = lib.mkDefault true;
     mini = lib.mkDefault true;
     nvim-ufo = lib.mkDefault true;

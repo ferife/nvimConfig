@@ -5,11 +5,6 @@
 }: {
   # Import all your configuration modules here
   imports = [
-    ./appearance
-    ./keymaps
-    ./plugins
-
     ./basics.nix
-    ./dependencies.nix
   ];
 }

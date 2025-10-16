@@ -5,6 +5,7 @@
 }: {
   options.frf.plugins = {
     git = lib.mkEnableOption "the plugins and config for working with git";
+    hardtime = lib.mkEnableOption "Hardtime.nvim, a plugin that blocks repeated use of the simpler vim keys to encourage the use of more graceful bindings";
     intellitab = lib.mkEnableOption "IntelliTab, a small plugin that will auto indent blank lines to the same place smartindent would";
     mini = lib.mkEnableOption "mini, a collection of small QoL plugins";
     nvim-ufo = lib.mkEnableOption "nvim-ufo, a plugin made to make the folding function easier to use";
