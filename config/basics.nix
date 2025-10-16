@@ -20,6 +20,8 @@
     mouse = ""; # Disables the mouse
   };
 
+  wrapRc = true;
+
   keymaps = [
     {
       action = "<cmd>echo \"Use h to move!\"<CR>";
