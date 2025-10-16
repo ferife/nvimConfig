@@ -4,6 +4,8 @@
   ...
 }: {
   config = lib.mkMerge [
+    # {globalOpts.colorcolumn = "80,120";}
+
     {
       plugins = {
         cursorline = {
@@ -19,13 +21,18 @@
         };
         lualine.enable = true;
         numbertoggle.enable = true;
+        virt-column = {
+          enable = true;
+          settings = {
+            char = "|";
+            virtcolumn = "80,120";
+          };
+        };
         web-devicons.enable = true;
       };
     }
 
-    (lib.mkIf config.appearance.rainbow-delimiters {
-      plugins.rainbow-delimiters.enable = true;
-    })
+    (lib.mkIf config.appearance.rainbow-delimiters {plugins.rainbow-delimiters.enable = true;})
 
     # Colorschemes
     (lib.mkIf (config.appearance.colorscheme == "onedark") {
