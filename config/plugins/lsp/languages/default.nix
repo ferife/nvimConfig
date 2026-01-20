@@ -19,7 +19,7 @@
   ];
 
   config.frf.plugins.lsp.languages = {
-    java = false;
+    # java = false;
     markdown.enable = false;
   };
 }
